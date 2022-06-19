@@ -54,7 +54,9 @@ class Lista extends StatelessWidget {
         top: 5.0,
         left: 10.0,
       ),
-      child: IconButton(
+      child: CircleAvatar(   //Made it a circle avatar just to practice
+        backgroundColor: Colors.transparent,
+        child: IconButton(
         icon: Icon(Icons.shopping_cart),
         color: Colors.grey, 
         onPressed: () => Flushbar(
@@ -62,7 +64,8 @@ class Lista extends StatelessWidget {
           message: "You have added ${shoeName} to your cart",
           duration: Duration(seconds: 2),
         )..show(context),
-      ),
+      ),),
+   
       
     );
     
